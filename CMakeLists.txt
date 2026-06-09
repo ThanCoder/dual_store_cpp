@@ -7,9 +7,12 @@ project(dual_store VERSION 0.0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 
 
-add_library(libs STATIC src/libs/dualstore_encoder.cpp
+add_library(libs STATIC 
+    src/libs/dualstore_encoder.cpp
     src/libs/dualstore_decoder.cpp
-    src/libs/dualstore_decoder.h)
+    src/libs/dualstore_decoder.h
+    
+)
 
 target_include_directories(libs PUBLIC src/libs)
 
